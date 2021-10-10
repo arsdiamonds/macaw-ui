@@ -1,7 +1,8 @@
 import clsx from "clsx";
 import React from "react";
 
-import { Logo } from "../icons/Logo";
+// import logoImg from "../assets/logo.png";
+// import { Logo } from "../icons/Logo";
 import { localStorageKeys } from "../localStorageKeys";
 import { makeStyles } from "../theme";
 import useLocalStorage from "../tools/useLocalStorage";
@@ -63,7 +64,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
     >
       <div className={classes.float}>
         <div className={classes.logo}>
-          <Logo />
+          <span style={{ fontWeight: 900, fontSize: "32px", color: "#bd8e02" }}>
+            tummere
+          </span>
+          {/* <img src={logoImg} style={{ width: "200px" }} alt="tummere" /> */}
         </div>
         {menuItems.map((menuItem) => (
           <MenuItem
