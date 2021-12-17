@@ -18,6 +18,7 @@ const useStyles = makeStyles(
     float: {
       height: "100vh",
       position: "fixed",
+      paddingTop: "10rem",
     },
     logo: {
       margin: `36px 0 ${theme.spacing(3)} ${theme.spacing(3.5)}`,
@@ -63,12 +64,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
       })}
     >
       <div className={classes.float}>
-        <div className={classes.logo}>
+        {/* <div className={classes.logo}>
           <span style={{ fontWeight: 900, fontSize: "32px", color: "#bd8e02" }}>
             tummere
           </span>
-          {/* <img src={logoImg} style={{ width: "200px" }} alt="tummere" /> */}
-        </div>
+          <img src={logoImg} style={{ width: "200px" }} alt="tummere" />
+        </div> */}
         {menuItems.map((menuItem) => (
           <MenuItem
             active={active === menuItem.id}
